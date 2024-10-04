@@ -226,7 +226,7 @@ local killedPlayers = {} -- Track killed players
 local function sendNotification(targetName)
     game.StarterGui:SetCore("SendNotification", {
         Title = "Killaura Notification";
-        Text = "Killed easy target: " .. targetName; 
+        Text = "Killed " .. targetName; 
         Duration = 5;
     })
 end
@@ -364,3 +364,9 @@ tab4:Button("cocosploit", "Executes cocosploit", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/cocotv666/CocoSploit/main/CocoSploit_Loader'))()
     Flux:Notification("Executed Script Successfully!", "OK")
 end)
+
+local tab5 = win:Tab("credits", "http://www.roblox.com/asset/?id=6023426915")
+
+tab4:Label("cosmicworks for the idea walkspeed, and jumppower")
+tab4:Label("sus for the buttons and supported games (adding more soon)")
+tab4:Label("chatgpt for the scripts")
