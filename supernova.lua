@@ -44,6 +44,23 @@ tab3:Button("CocoSploit", "Executes CocoSploit", function()
     Flux:Notification("Executed Script Successfully!", "OK")
 end)
 
+tab3:Label("Washiez")
+
+tab3:Button("Ultimate washiez troller", "Executes npcs script", function()
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/thepro1npc/randomscripts/main/script.lua'))()
+    Flux:Notification("Executed Script Successfully!", "OK")
+end)
+
+tab3:Button("myeware", "Executes myeware", function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/MyeTheScripterLol/MyeWare/main/Washiez/washiezLoader"))()
+    Flux:Notification("Executed Script Successfully!", "OK")
+end)
+
+tab3:Button("lancet remake", "Executes lancet remake", function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/rosploiter/scripts/refs/heads/main/lancet.lua",true))()
+    Flux:Notification("Executed Script Successfully!", "OK")
+end)
+
 local tab4 = win:Tab("Game Scripts", "http://www.roblox.com/asset/?id=6023426915")
 
 tab4:Label("Game Scripts")
@@ -366,6 +383,67 @@ teleportToRemington870()
     Flux:Notification("teleported!", "OK")
 end)
 
+tab4:Button("teleport to the car spawner", "teleports to the car spawner", function()
+    -- Define the teleport function
+local function teleportToRemington870()
+    -- Replace this with the actual coordinates of the Remington 870 location
+    local remington870Location = Vector3.new(-104, 3, 106) -- Example coordinates
+    local player = game.Players.LocalPlayer
+
+    if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+        player.Character.HumanoidRootPart.CFrame = CFrame.new(remington870Location)
+    else
+        warn("Player or character not found!")
+    end
+end
+
+-- Call the teleport function
+teleportToRemington870()
+
+    Flux:Notification("teleported!", "OK")
+end)
+
+tab4:Button("teleport outside the washiez prison", "teleports you outside the washiez prison", function()
+    -- Define the teleport function
+local function teleportToRemington870()
+    -- Replace this with the actual coordinates of the Remington 870 location
+    local remington870Location = Vector3.new(256, 3, -506) -- Example coordinates
+    local player = game.Players.LocalPlayer
+
+    if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+        player.Character.HumanoidRootPart.CFrame = CFrame.new(remington870Location)
+    else
+        warn("Player or character not found!")
+    end
+end
+
+-- Call the teleport function
+teleportToRemington870()
+
+    Flux:Notification("teleported!", "OK")
+end)
+
+tab4:Button("teleport inside the washiez prison", "teleports you inside the washiez prison", function()
+    -- Define the teleport function
+local function teleportToRemington870()
+    -- Replace this with the actual coordinates of the Remington 870 location
+    local remington870Location = Vector3.new(249, 3, -568) -- Example coordinates
+    local player = game.Players.LocalPlayer
+
+    if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+        player.Character.HumanoidRootPart.CFrame = CFrame.new(remington870Location)
+    else
+        warn("Player or character not found!")
+    end
+end
+
+-- Call the teleport function
+teleportToRemington870()
+
+    Flux:Notification("teleported!", "OK")
+end)
+
+
 tab4:Label("Pop It Trading by ToysLiker")
 
 tab4:Button("fe fireworks (pc melter)", "pc melter found by cosmic", function()
@@ -383,3 +461,5 @@ tab5:Label("Credits")
 
 tab5:Label("@Cosmic - Owner, and Scripter")
 tab5:Label("@Sus - Co-Owner, and Developer")
+tab5:Label("Discord.gg/robloxtrollers")
+
