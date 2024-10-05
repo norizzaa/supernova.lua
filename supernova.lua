@@ -25,13 +25,32 @@ tab2:Slider("JumpPower", "Changes Your In-Game JumpPower To Your Desired Amount"
     character:WaitForChild("Humanoid").JumpHeight = jumppower
 end)
 
-local tab3 = win:Tab("Game scripts", "http://www.roblox.com/asset/?id=6023426915")
+local tab3 = win:Tab("Game Hubs", "http://www.roblox.com/asset/?id=6023426915")
 
-tab3:Label("Game scripts")
+tab3:Label("Bedwars")
 
-tab3:Label("prison life")
+tab3:Button("Vape v4", "Executes Vape v4", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+    Flux:Notification("Executed Script Successfully!", "OK")
+end)
 
-tab3:Button("tp to m4", "teleports you to the M4", function()
+tab3:Button("Aurora", "Executes Aurora", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/cocotv666/Aurora/refs/heads/main/Aurora_Loader'))()
+    Flux:Notification("Executed Script Successfully!", "OK")
+end)
+
+tab3:Button("CocoSploit", "Executes CocoSploit", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/cocotv666/CocoSploit/main/CocoSploit_Loader'))()
+    Flux:Notification("Executed Script Successfully!", "OK")
+end)
+
+local tab4 = win:Tab("Game Scripts", "http://www.roblox.com/asset/?id=6023426915")
+
+tab4:Label("Game Scripts")
+
+tab4:Label("Prison Life")
+
+tab4:Button("tp to m4", "teleports you to the M4", function()
 -- Define the teleport function
 local function teleportToM4()
     -- Replace this with the actual coordinates of the M4 location
@@ -55,7 +74,7 @@ teleportToRemington870()
     Flux:Notification("teleported!", "OK")
 end)
 
-tab3:Button("tp to shotgun", "teleports you to the shotgun", function()
+tab4:Button("tp to shotgun", "teleports you to the shotgun", function()
 -- Define the teleport function
 local function teleportToRemington870()
     -- Replace this with the actual coordinates of the Remington 870 location
@@ -75,7 +94,7 @@ teleportToRemington870()
     Flux:Notification("teleported", "OK")
 end)
 
-tab3:Button("tp to crim base", "teleports you to crim base", function()
+tab4:Button("tp to crim base", "teleports you to crim base", function()
 -- Define the teleport function
 local function teleportToRemington870()
     -- Replace this with the actual coordinates of the Remington 870 location
@@ -96,7 +115,7 @@ teleportToRemington870()
 end)
 
 
-tab3:Button("tp to prison", "teleports you to the middle of the prison", function()
+tab4:Button("tp to prison", "teleports you to the middle of the prison", function()
 -- Define the teleport function
 local function teleportToRemington870()
     -- Replace this with the actual coordinates of the Remington 870 location
@@ -116,7 +135,7 @@ teleportToRemington870()
     Flux:Notification("teleported!", "OK")
 end)
 
-tab3:Button("tp outside", "teleports you outside", function()
+tab4:Button("tp outside", "teleports you outside", function()
 -- Define the teleport function
 local function teleportToRemington870()
     -- Replace this with the actual coordinates of the Remington 870 location
@@ -136,7 +155,7 @@ teleportToRemington870()
     Flux:Notification("teleported!", "OK")
 end)
 
-tab3:Button("tp to a random player (this is like universal)", "teleports you to a random player", function()
+tab4:Button("tp to a random player (this is like universal)", "teleports you to a random player", function()
 local Players = game:GetService("Players")
 
 local function teleportToRandomPlayer()
@@ -169,7 +188,7 @@ end
 teleportToRandomPlayer()
 end)
 
-tab3:Button("delete fences and gates", "once clicked it deletes all the fences and gates", function()
+tab4:Button("delete fences and gates", "once clicked it deletes all the fences and gates", function()
 	-- Script to delete the folder named "Prison_Fences"
 
 local folderName = "Prison_Fences"
@@ -191,7 +210,7 @@ deleteFolder()
 Flux:Notification("deleted!", "OK")
 end)
 
-tab3:Button("delete doors", "once clicked it deletes all the doors", function()
+tab4:Button("delete doors", "once clicked it deletes all the doors", function()
 	-- Script to delete the folder named "Doors"
 
 local folderName = "Doors"
@@ -213,7 +232,7 @@ deleteFolder()
 Flux:Notification("deleted!", "OK")
 end)
 
-tab3:Button("killaura", "it gives you killaura", function()
+tab4:Button("killaura", "it gives you killaura", function()
 -- Services
 local player = game.Players.LocalPlayer
 local replicatedStorage = game:GetService("ReplicatedStorage")
@@ -261,12 +280,13 @@ attackAllPlayers()
 
 
 
+
 Flux:Notification("killaura has been activated!", "OK")
 end)
 
-tab3:Label("Washiez")
+tab4:Label("Washiez")
 
-tab3:Button("teleport to middle", "teleports to the middle", function()
+tab4:Button("teleport to middle", "teleports to the middle", function()
     -- Define the teleport function
 local function teleportToRemington870()
     -- Replace this with the actual coordinates of the Remington 870 location
@@ -286,7 +306,7 @@ teleportToRemington870()
     Flux:Notification("teleported!", "OK")
 end)
 
-tab3:Button("teleport to obby", "teleports to the obby", function()
+tab4:Button("teleport to obby", "teleports to the obby", function()
     -- Define the teleport function
 local function teleportToRemington870()
     -- Replace this with the actual coordinates of the Remington 870 location
@@ -306,7 +326,7 @@ teleportToRemington870()
     Flux:Notification("teleported!", "OK")
 end)
 
-tab3:Button("teleport to staff area", "teleports to the staff area", function()
+tab4:Button("teleport to staff area", "teleports to the staff area", function()
     -- Define the teleport function
 local function teleportToRemington870()
     -- Replace this with the actual coordinates of the Remington 870 location
@@ -326,7 +346,7 @@ teleportToRemington870()
     Flux:Notification("teleported!", "OK")
 end)
 
-tab3:Button("teleport to vip area", "teleports to the vip area", function()
+tab4:Button("teleport to vip area", "teleports to the vip area", function()
     -- Define the teleport function
 local function teleportToRemington870()
     -- Replace this with the actual coordinates of the Remington 870 location
@@ -346,29 +366,20 @@ teleportToRemington870()
     Flux:Notification("teleported!", "OK")
 end)
 
-local tab4 = win:Tab("Game hubs", "http://www.roblox.com/asset/?id=6023426915")
+tab4:Label("Pop It Trading by ToysLiker")
 
-tab4:Label("Bedwars")
+tab4:Button("fe fireworks (pc melter)", "pc melter found by cosmic", function()
+	while wait() do
 
-tab4:Button("Vape v4", "Executes Vape v4", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
-    Flux:Notification("Executed Script Successfully!", "OK")
-end)
+    game:GetService("ReplicatedStorage").Events.FireworksRE.FireworksRE:FireServer(game.Players.LocalPlayer)
 
-tab4:Button("Aurora", "Executes Aurora", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/cocotv666/Aurora/refs/heads/main/Aurora_Loader'))()
-    Flux:Notification("Executed Script Successfully!", "OK")
-end)
-
-tab4:Button("cocosploit", "Executes cocosploit", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/cocotv666/CocoSploit/main/CocoSploit_Loader'))()
-    Flux:Notification("Executed Script Successfully!", "OK")
+end
+    Flux:Notification("activated!", "OK")
 end)
 
 local tab5 = win:Tab("Credits", "http://www.roblox.com/asset/?id=6023426915")
 
-tab5:Label("credits")
+tab5:Label("Credits")
 
-tab5:Label("cosmicworks for the idea, walkspeed, and jumppower sliders")
-tab5:Label("sus for the buttons and supported games (more coming soon)")
-tab5:Label("chatgpt for the scripts")
+tab5:Label("@Cosmic - Owner, and Scripter")
+tab5:Label("@Sus - Co-Owner, and Developer")
