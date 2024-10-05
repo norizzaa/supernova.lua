@@ -455,6 +455,88 @@ end
     Flux:Notification("activated!", "OK")
 end)
 
+tab4:Label("auto rap battles")
+
+tab4:Button("teleport to stage", "teleport to the stage", function()
+	    -- Define the teleport function
+local function teleportToRemington870()
+    -- Replace this with the actual coordinates of the Remington 870 location
+    local remington870Location = Vector3.new(131, 13, -134) -- Example coordinates
+    local player = game.Players.LocalPlayer
+
+    if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+        player.Character.HumanoidRootPart.CFrame = CFrame.new(remington870Location)
+    else
+        warn("Player or character not found!")
+    end
+end
+
+-- Call the teleport function
+teleportToRemington870()
+
+    Flux:Notification("teleported!", "OK")
+end)
+
+tab4:Button("teleport to player 1", "teleports to player 1", function()
+	    -- Define the teleport function
+local function teleportToRemington870()
+    -- Replace this with the actual coordinates of the Remington 870 location
+    local remington870Location = Vector3.new(129, 13, -145) -- Example coordinates
+    local player = game.Players.LocalPlayer
+
+    if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+        player.Character.HumanoidRootPart.CFrame = CFrame.new(remington870Location)
+    else
+        warn("Player or character not found!")
+    end
+end
+
+-- Call the teleport function
+teleportToRemington870()
+
+    Flux:Notification("teleported!", "OK")
+end)
+
+tab4:Button("teleport to player 2", "teleports to player 2", function()
+	    -- Define the teleport function
+local function teleportToRemington870()
+    -- Replace this with the actual coordinates of the Remington 870 location
+    local remington870Location = Vector3.new(128, 13, -122) -- Example coordinates
+    local player = game.Players.LocalPlayer
+
+    if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+        player.Character.HumanoidRootPart.CFrame = CFrame.new(remington870Location)
+    else
+        warn("Player or character not found!")
+    end
+end
+
+-- Call the teleport function
+teleportToRemington870()
+
+    Flux:Notification("teleported!", "OK")
+end)
+
+tab4:Button("teleport to the dj booth", "teleports to the dj booth", function()
+	    -- Define the teleport function
+local function teleportToRemington870()
+    -- Replace this with the actual coordinates of the Remington 870 location
+    local remington870Location = Vector3.new(142, 16, -133) -- Example coordinates
+    local player = game.Players.LocalPlayer
+
+    if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+        player.Character.HumanoidRootPart.CFrame = CFrame.new(remington870Location)
+    else
+        warn("Player or character not found!")
+    end
+end
+
+-- Call the teleport function
+teleportToRemington870()
+
+    Flux:Notification("teleported!", "OK")
+end)
+
 local tab5 = win:Tab("Credits", "http://www.roblox.com/asset/?id=6023426915")
 
 tab5:Label("Credits")
@@ -462,4 +544,3 @@ tab5:Label("Credits")
 tab5:Label("@Cosmic - Owner, and Scripter")
 tab5:Label("@Sus - Co-Owner, and Developer")
 tab5:Label("Discord.gg/robloxtrollers")
-
