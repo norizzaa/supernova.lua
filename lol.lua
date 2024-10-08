@@ -11,17 +11,18 @@
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-local TextButton_2 = Instance.new("TextButton")
-local TextButton_3 = Instance.new("TextButton")
-local TextButton_4 = Instance.new("TextButton")
+local fling = Instance.new("TextButton")
+local staff = Instance.new("TextButton")
+local vip = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel_4 = Instance.new("TextLabel")
-local TextButton_5 = Instance.new("TextButton")
-local TextButton_6 = Instance.new("TextButton")
-local TextButton_7 = Instance.new("TextButton")
+local nameless = Instance.new("TextButton")
+local inf = Instance.new("TextButton")
+local close = Instance.new("TextButton")
+local middle = Instance.new("TextButton")
+local middle_2 = Instance.new("TextButton")
 
 -- Properties
 
@@ -37,57 +38,47 @@ Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0.259229481, 0, 0.21875003, 0)
 Frame.Size = UDim2.new(0, 616, 0, 467)
 
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(0.117647, 0, 1)
-TextButton.BorderColor3 = Color3.new(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0, 0, 0.395036072, 0)
-TextButton.Size = UDim2.new(0, 209, 0, 61)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "teleport to middle"
-TextButton.TextColor3 = Color3.new(0, 0, 0)
-TextButton.TextScaled = true
-TextButton.TextSize = 14
-TextButton.TextWrapped = true
+fling.Name = "fling"
+fling.Parent = Frame
+fling.BackgroundColor3 = Color3.new(0.117647, 0, 1)
+fling.BorderColor3 = Color3.new(0, 0, 0)
+fling.BorderSizePixel = 0
+fling.Position = UDim2.new(0, 0, 0.541382551, 0)
+fling.Size = UDim2.new(0, 209, 0, 61)
+fling.Font = Enum.Font.SourceSans
+fling.Text = "fling"
+fling.TextColor3 = Color3.new(0, 0, 0)
+fling.TextScaled = true
+fling.TextSize = 14
+fling.TextWrapped = true
 
-TextButton_2.Parent = Frame
-TextButton_2.BackgroundColor3 = Color3.new(0.117647, 0, 1)
-TextButton_2.BorderColor3 = Color3.new(0, 0, 0)
-TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0, 0, 0.597057045, 0)
-TextButton_2.Size = UDim2.new(0, 209, 0, 61)
-TextButton_2.Font = Enum.Font.SourceSans
-TextButton_2.Text = "fling"
-TextButton_2.TextColor3 = Color3.new(0, 0, 0)
-TextButton_2.TextScaled = true
-TextButton_2.TextSize = 14
-TextButton_2.TextWrapped = true
+staff.Name = "staff"
+staff.Parent = Frame
+staff.BackgroundColor3 = Color3.new(0.117647, 0, 1)
+staff.BorderColor3 = Color3.new(0, 0, 0)
+staff.BorderSizePixel = 0
+staff.Position = UDim2.new(0.581135213, 0, 0.375764102, 0)
+staff.Size = UDim2.new(0, 209, 0, 61)
+staff.Font = Enum.Font.SourceSans
+staff.Text = "teleport to staff area"
+staff.TextColor3 = Color3.new(0, 0, 0)
+staff.TextScaled = true
+staff.TextSize = 14
+staff.TextWrapped = true
 
-TextButton_3.Parent = Frame
-TextButton_3.BackgroundColor3 = Color3.new(0.117647, 0, 1)
-TextButton_3.BorderColor3 = Color3.new(0, 0, 0)
-TextButton_3.BorderSizePixel = 0
-TextButton_3.Position = UDim2.new(0.581135213, 0, 0.395036072, 0)
-TextButton_3.Size = UDim2.new(0, 209, 0, 61)
-TextButton_3.Font = Enum.Font.SourceSans
-TextButton_3.Text = "teleport to staff area"
-TextButton_3.TextColor3 = Color3.new(0, 0, 0)
-TextButton_3.TextScaled = true
-TextButton_3.TextSize = 14
-TextButton_3.TextWrapped = true
-
-TextButton_4.Parent = Frame
-TextButton_4.BackgroundColor3 = Color3.new(0.117647, 0, 1)
-TextButton_4.BorderColor3 = Color3.new(0, 0, 0)
-TextButton_4.BorderSizePixel = 0
-TextButton_4.Position = UDim2.new(0.579545438, 0, 0.597057045, 0)
-TextButton_4.Size = UDim2.new(0, 209, 0, 61)
-TextButton_4.Font = Enum.Font.SourceSans
-TextButton_4.Text = "teleport to vip area"
-TextButton_4.TextColor3 = Color3.new(0, 0, 0)
-TextButton_4.TextScaled = true
-TextButton_4.TextSize = 14
-TextButton_4.TextWrapped = true
+vip.Name = "vip"
+vip.Parent = Frame
+vip.BackgroundColor3 = Color3.new(0.117647, 0, 1)
+vip.BorderColor3 = Color3.new(0, 0, 0)
+vip.BorderSizePixel = 0
+vip.Position = UDim2.new(0.58116883, 0, 0.541382551, 0)
+vip.Size = UDim2.new(0, 209, 0, 61)
+vip.Font = Enum.Font.SourceSans
+vip.Text = "teleport to vip area"
+vip.TextColor3 = Color3.new(0, 0, 0)
+vip.TextScaled = true
+vip.TextSize = 14
+vip.TextWrapped = true
 
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.new(0, 0, 0)
@@ -141,51 +132,82 @@ TextLabel_4.TextScaled = true
 TextLabel_4.TextSize = 14
 TextLabel_4.TextWrapped = true
 
-TextButton_5.Parent = Frame
-TextButton_5.BackgroundColor3 = Color3.new(0.117647, 0, 1)
-TextButton_5.BorderColor3 = Color3.new(0, 0, 0)
-TextButton_5.BorderSizePixel = 0
-TextButton_5.Position = UDim2.new(0.58116883, 0, 0.209476769, 0)
-TextButton_5.Size = UDim2.new(0, 209, 0, 61)
-TextButton_5.Font = Enum.Font.SourceSans
-TextButton_5.Text = "nameless admin"
-TextButton_5.TextColor3 = Color3.new(0, 0, 0)
-TextButton_5.TextScaled = true
-TextButton_5.TextSize = 14
-TextButton_5.TextWrapped = true
+nameless.Name = "nameless"
+nameless.Parent = Frame
+nameless.BackgroundColor3 = Color3.new(0.117647, 0, 1)
+nameless.BorderColor3 = Color3.new(0, 0, 0)
+nameless.BorderSizePixel = 0
+nameless.Position = UDim2.new(0.58116883, 0, 0.192346156, 0)
+nameless.Size = UDim2.new(0, 209, 0, 61)
+nameless.Font = Enum.Font.SourceSans
+nameless.Text = "nameless admin"
+nameless.TextColor3 = Color3.new(0, 0, 0)
+nameless.TextScaled = true
+nameless.TextSize = 14
+nameless.TextWrapped = true
 
-TextButton_6.Parent = Frame
-TextButton_6.BackgroundColor3 = Color3.new(0.117647, 0, 1)
-TextButton_6.BorderColor3 = Color3.new(0, 0, 0)
-TextButton_6.BorderSizePixel = 0
-TextButton_6.Position = UDim2.new(0.0113636367, 0, 0.209476769, 0)
-TextButton_6.Size = UDim2.new(0, 209, 0, 61)
-TextButton_6.Font = Enum.Font.SourceSans
-TextButton_6.Text = "infinite yield"
-TextButton_6.TextColor3 = Color3.new(0, 0, 0)
-TextButton_6.TextScaled = true
-TextButton_6.TextSize = 14
-TextButton_6.TextWrapped = true
+inf.Name = "inf"
+inf.Parent = Frame
+inf.BackgroundColor3 = Color3.new(0.117647, 0, 1)
+inf.BorderColor3 = Color3.new(0, 0, 0)
+inf.BorderSizePixel = 0
+inf.Position = UDim2.new(0.0113636367, 0, 0.192346156, 0)
+inf.Size = UDim2.new(0, 209, 0, 61)
+inf.Font = Enum.Font.SourceSans
+inf.Text = "infinite yield"
+inf.TextColor3 = Color3.new(0, 0, 0)
+inf.TextScaled = true
+inf.TextSize = 14
+inf.TextWrapped = true
 
-TextButton_7.Parent = Frame
-TextButton_7.BackgroundColor3 = Color3.new(0.533333, 0, 1)
-TextButton_7.BorderColor3 = Color3.new(0, 0, 0)
-TextButton_7.BorderSizePixel = 0
-TextButton_7.Position = UDim2.new(0.868472934, 0, 0.0288690403, 0)
-TextButton_7.Size = UDim2.new(0, 73, 0, 47)
-TextButton_7.Font = Enum.Font.SourceSans
-TextButton_7.Text = "X"
-TextButton_7.TextColor3 = Color3.new(1, 0, 0.0666667)
-TextButton_7.TextScaled = true
-TextButton_7.TextSize = 14
-TextButton_7.TextWrapped = true
-TextButton_6.MouseButton1Down:Connect(function()
+close.Name = "close"
+close.Parent = Frame
+close.BackgroundColor3 = Color3.new(0.533333, 0, 1)
+close.BorderColor3 = Color3.new(0, 0, 0)
+close.BorderSizePixel = 0
+close.Position = UDim2.new(0.868472934, 0, 0.0288690403, 0)
+close.Size = UDim2.new(0, 73, 0, 47)
+close.Font = Enum.Font.SourceSans
+close.Text = "X"
+close.TextColor3 = Color3.new(1, 0, 0.0666667)
+close.TextScaled = true
+close.TextSize = 14
+close.TextWrapped = true
+
+middle.Name = "middle"
+middle.Parent = Frame
+middle.BackgroundColor3 = Color3.new(0.117647, 0, 1)
+middle.BorderColor3 = Color3.new(0, 0, 0)
+middle.BorderSizePixel = 0
+middle.Position = UDim2.new(0.0113636367, 0, 0.374359012, 0)
+middle.Size = UDim2.new(0, 209, 0, 61)
+middle.Font = Enum.Font.SourceSans
+middle.Text = "teleport to middle"
+middle.TextColor3 = Color3.new(0, 0, 0)
+middle.TextScaled = true
+middle.TextSize = 14
+middle.TextWrapped = true
+
+middle_2.Name = "middle"
+middle_2.Parent = Frame
+middle_2.BackgroundColor3 = Color3.new(0.117647, 0, 1)
+middle_2.BorderColor3 = Color3.new(0, 0, 0)
+middle_2.BorderSizePixel = 0
+middle_2.Position = UDim2.new(0.0113636367, 0, 0.704123437, 0)
+middle_2.Size = UDim2.new(0, 209, 0, 61)
+middle_2.Font = Enum.Font.SourceSans
+middle_2.Text = "notify when people joins"
+middle_2.TextColor3 = Color3.new(0, 0, 0)
+middle_2.TextScaled = true
+middle_2.TextSize = 14
+middle_2.TextWrapped = true
+inf.MouseButton1Down:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end)
-TextButton_5.MouseButton1Down:Connect(function()
+nameless.MouseButton1Down:Connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()
 end)
-TextButton_4.MouseButton1Down:Connect(function()
+vip.MouseButton1Down:Connect(function()
 	-- Define the teleport function
 	local function teleportToM4()
 		-- Replace this with the actual coordinates of the M4 location
@@ -203,7 +225,7 @@ TextButton_4.MouseButton1Down:Connect(function()
 	teleportToM4()
 
 end)
-TextButton_3.MouseButton1Down:Connect(function()
+staff.MouseButton1Down:Connect(function()
 	-- Define the teleport function
 	local function teleportToM4()
 		-- Replace this with the actual coordinates of the M4 location
@@ -221,10 +243,10 @@ TextButton_3.MouseButton1Down:Connect(function()
 	teleportToM4()
 
 end)
-TextButton_2.MouseButton1Down:Connect(function()
+fling.MouseButton1Down:Connect(function()
 	loadstring(game:HttpGet"https://raw.githubusercontent.com/norizzaa/supernova.lua/refs/heads/main/asd")()
 end)
-TextButton.MouseButton1Down:Connect(function()
+middle.MouseButton1Down:Connect(function()
 	-- Define the teleport function
 	local function teleportToM4()
 		-- Replace this with the actual coordinates of the M4 location
@@ -241,6 +263,37 @@ TextButton.MouseButton1Down:Connect(function()
 	-- Call the teleport function
 	teleportToM4()
 end)
-TextButton_7.MouseButton1Down:Connect(function()
+close.MouseButton1Down:Connect(function()
 	Frame:Destroy()
+end)
+middle_2.MouseButton1Down:Connect(function()
+	-- Define the group ID
+	local groupId = 10261023  -- Replace this with your actual group ID
+
+	-- Function to fetch player's rank in the group
+	local function getPlayerRankInGroup(player)
+		local rank = player:GetRankInGroup(groupId)
+		return rank
+	end
+
+	-- Function to display a notification when a player joins
+	local function onPlayerJoin(player)
+		local playerName = player.Name
+		local playerRank = getPlayerRankInGroup(player)
+
+		-- Notification settings
+		local rankName = player:GetRoleInGroup(groupId)  -- Fetch the role name
+		local message = playerName .. " has joined the game! Rank: " .. rankName
+
+		-- Send the notification
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Player Joined";
+			Text = message;
+			Duration = 5;  -- Duration in seconds for how long the notification shows
+		})
+	end
+
+	-- Connect the PlayerAdded event to the function
+	game.Players.PlayerAdded:Connect(onPlayerJoin)
+
 end)
